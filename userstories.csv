@@ -1,0 +1,2612 @@
+ResourceType,Id,Name,Description,StartDate,EndDate,CreateDate,ModifyDate,LastCommentDate,Tags,NumericPriority,Effort,EffortCompleted,EffortToDo,Progress,TimeSpent,TimeRemain,LastStateChangeDate,PlannedStartDate,PlannedEndDate,InitialEstimate,Units,EntityType,Project,LastEditor,Owner,LastCommentedUser,LinkedTestPlan,Release,Iteration,TeamIteration,Team,Priority,EntityState,ResponsibleTeam,Feature,CustomFields,Percent of completion,Scope,TC Covered,Client Task ID,Deployed,For Project,Cost Type,Coefficient,Coefficient Comment
+UserStory,276330,"[PDF TICKET ARTWORK] As an admin, I want PDF Ticket Artwork settings to have the following functionality","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ol>
+	<li>On &#39;Catalog &gt; Products &gt; Add&#47;Edit Product &gt; Images And Videos &#40;section&#41; &gt; Image Detail &#40;pop-up&#41;&#39;&#58;
+	<ul>
+		<li>&#39;Ticket Image&#39; role should be removed</li>
+	</ul>
+	</li>
+	<li>&#39;PDF Ticket Artwork&#39; setting should be added to the &#39;Catalog &gt; Products &gt; Add&#47;Edit Product&#39; page&#58;
+	<ol>
+		<li>This should be an &#39;Upload&#39; button&#44; pressing this button should open File Upload window</li>
+		<li>Uploaded Image should be used as a ticket image</li>
+		<li>Setting should be added after the &#39;Don&#39;t Send Product to Sitecore&#39; setting</li>
+		<li>Setting should be available only for &#39;General&#39; products</li>
+	</ol>
+	</li>
+	<li>On &#39;Ewave &gt; Manage Event &gt; Add&#47;Edit Event &gt; General &#40;section&#41;&#39;
+	<ol>
+		<li>&#39;Ticket Image&#39; setting should be renamed to &#39;PDF Ticket Artwork&#39; and be shown before the &#39;Club&#39; dropdown setting</li>
+	</ol>
+	</li>
+	<li>On &#39;Ewave &gt; Manage Club &gt; Add&#47;Edit Club &gt; General &#40;section&#41;&#39;
+	<ol>
+		<li>&#39;Ticket Image&#39; setting should be renamed to &#39;PDF Ticket Artwork&#39; and be shown before the &#39;Email&#39; textbox setting</li>
+	</ol>
+	</li>
+</ol>
+</div>
+</div>
+",,,2018-10-09,2018-10-09,,,268664.4015,18,0.29,17.71,0.0161,0.3,18,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=202497}","{ResourceType=Feature, Id=190344, Name=[Club] Event}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,276298,"[B2B][Neverfail][Outlet Group] As an admin, I want to be able to reassign an Outlet from Outlet Group to a Bill Group or Trading Chanin","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>
+	<div>If admin reassigns an Outlet from Outlet Group to a Bill Group or Trading Chain&#58;</div>
+
+	<ul>
+		<li>If it is NOT the last Outlet in Outlet Group - the Standalone Outlet will become Bill Group &#40;Trading Chain&#41; Outlet without any changes to customers in the Outlet Group</li>
+		<li>If it is the last Outlet in Outlet Group - the Standalone Outlet will become Bill Group &#40;Trading Chain&#41; Outlet. All customers in the Outlet Group should be reassigned to the Bill Group &#40;Trading Chain&#41; with Bill Group &#40;Trading Chain&#41; Outlet - Admin role. The Outlet Group should be deleted.</li>
+	</ul>
+	</li>
+	<li>If admin reassigns an Outlet from Bill Group or Trading Chain to the Virtual Root&#58;
+	<ul>
+		<li>Outlet Group should be created with reassigned Outlet in it. </li>
+		<li>Bill Group &#40;Trading Chain&#41; Outlet - Admin user&#44; assigned to this Outlet&#44; should have his role changed to Standalone Outlets - Admin</li>
+	</ul>
+	</li>
+</ul>
+</div>
+",,,2018-10-09,2018-10-09,,,264665.5018,0,0,0,0,0,0,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=202461}","{ResourceType=Feature, Id=203679, Name=[B2B][Neverfail] Team Management}",9,0,,FALSE,,,Neverfail,To Be Determined,1,
+UserStory,276217,"[COMPARE EVENT] As an admin, I want to be able to use Event Sales Compare report",1970-01-01,2018-10-08,,2018-10-08,2018-10-09,,,254799.3234,48,0.48,47.52,0.01,0.5,48,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=2, ResourceType=EntityState, Id=1261, Name=BA}","{ResourceType=TeamAssignment, Id=202394}","{ResourceType=Feature, Id=196591, Name=[Event] Generate Report}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,276215,"[Project Matrix Generator] As a ewave user, I want Confluence user for API to be created","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<div>
+<div> </div>
+
+<ol>
+	<li>A new user should be created for the eWave WiKi &#40;Confluence 5.6&#41; https&#58;&#47;&#47;wiki.ewave.com
+	<ol>
+		<li>This user should have administrator rights for the LEGO Space https&#58;&#47;&#47;wiki.ewave.com&#47;display&#47;LEGO&#47;</li>
+		<li>This user should be used for API requests only</li>
+	</ol>
+	</li>
+</ol>
+
+<div> </div>
+</div>
+</div>
+",2018-10-09,2018-10-09,2018-10-08,2018-10-09,,,240889.5,0,0,0,1,0.2,0,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=202392}","{ResourceType=Feature, Id=187644, Name=Process Improvement}",9,0,,FALSE,,,Lego_internal,To Be Determined,1,
+UserStory,276202,"[DISCOUNT 4 DECIMALS] As a system, I want 'discount' attribute to be send as 4 decimal places","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ </div>
+
+<ul>
+	<li>The following changes should be implemented in &#39;saveSalesDocument&#39; API&#58;
+	<ul>
+		<li>System should send &#39;discount&#39; attribute as 4 decimal places</li>
+	</ul>
+	</li>
+</ul>
+</div>
+",2018-10-08,,2018-10-08,2018-10-09,2018-10-09,,253909.3067,2,1,1,0.5,1.2,1,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Viktoria, ResourceType=GeneralUser, Id=122, LastName=Kravchenko, Login=viktoria.kravchenko}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Viktoria, ResourceType=GeneralUser, Id=122, LastName=Kravchenko, Login=viktoria.kravchenko}",,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5.5, ResourceType=EntityState, Id=1372, Name=Tested on DEMO}","{ResourceType=TeamAssignment, Id=202376}","{ResourceType=Feature, Id=192730, Name=[Erply] TAF Integration}",9,0,,FALSE,,,TAF,To Be Determined,1,
+UserStory,276198,"[BULK MEMBERHSIPS] As an admin, I want to be able to use bulk actions on memberships grid","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ 
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:800px"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>There is at least one Menbership Instance in the system</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>Admin is on &#39;Ewave &gt; Club &gt; Membership Instance&#39; grid</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<div>The following functionality should be available&#58;</div>
+
+			<ol>
+				<li>Selection column should be added for grid items &#40;see VE-1&#41;
+				<ol start=""1"" style=""list-style-type:lower-alpha"">
+					<li>Selection column should have a dropdown control at the heading cell with &#39;Select All&#39; and &#39;Deselect All&#39; options available in appropriate cases</li>
+					<li>Selection column should have a checkbox in each row</li>
+				</ol>
+				</li>
+				<li>&#39;Actions&#39; dropdown should be added &#40;see VE-1&#41; with the following options&#58;
+				<ol start=""1"" style=""list-style-type:lower-alpha"">
+					<li>&#39;Change Status&#39; option should be available
+					<ol>
+						<li>Available Membership Instances status values should be options for this point</li>
+						<li>System should change status for the selected Membership Instances</li>
+					</ol>
+					</li>
+					<li>&#39;Delete&#39; option should be available
+					<ol>
+						<li>System should show confirmation pop-up before delete action</li>
+						<li>System should delete selected instances after confirmation
+						<ol>
+						</ol>
+						</li>
+					</ol>
+					</li>
+				</ol>
+				</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>VE-1</strong></td>
+			<td><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=188437"" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div> </div>
+",,,2018-10-08,2018-10-08,,,253528.8232,11,0,11,0,0,11,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=202372}","{ResourceType=Feature, Id=190344, Name=[Club] Event}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,276060,"[TIME CHECK & SEND] As a system, I want TP > Clarizen integration flow to have the following improvements","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<div>Original US&#58; https&#58;&#47;&#47;tp.ewave.com&#47;264985</div>
+
+<div> </div>
+
+<div><strong>Functional requirements&#58;</strong></div>
+
+<div> </div>
+
+<div>
+<ol>
+	<li>For the project teams time integration &#40;&#39;1-C&#39; case&#41; the following improvements should be implemented&#58;
+	<ol start=""1"" style=""list-style-type: lower-alpha;"">
+		<li>System should use related User Story ID as a &#39;TP ID&#39; value to find an appropriate Task in Clarizen</li>
+		<li>If no such task will be found - go to step &#39;1-C-2&#39; &#40;system should define Entity&#39;s related Feature ID and Name&#41;</li>
+	</ol>
+	</li>
+	<li>&#39;TP ID&#39; attribute in Clarizen&#39;s Task should be able to have several TargetProcess values separated by comma &#40;e.g. &#39;321321&#44;123123&#39;&#41;
+	<ol start=""1"" style=""list-style-type: lower-alpha;"">
+		<li>In this case system should attach time that has been tracked for specified TargetProcess entities to one Clarizen&#39;s Task &#40;many-to-one connection&#41;</li>
+	</ol>
+	</li>
+</ol>
+</div>
+</div>
+",,,2018-10-05,2018-10-05,,,236249,24,0,24,0,0,24,2018-10-05,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=202235}","{ResourceType=Feature, Id=257297, Name=TP and Clarizen integration}",9,0,,FALSE,,,Clarizen,To Be Determined,1,
+UserStory,276014,"[MY ACCOUNT] As a customer, I want to be able to download PDF's from My Account section","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ 
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:800px"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>Customer is logged in and has an order with PDF item&#40;s&#41;</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>Customer is on &#39;My Account &gt; My Orders&#39; page</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<ol>
+				<li>Additional column &#39;Order PDF&#39; should be available in the orders grid</li>
+				<li>Each order with PDF files should have a &#39;Download&#39; link available in the corresponding cell
+				<ol start=""1"" style=""list-style-type:lower-alpha"">
+					<li>Only PDF files in &#39;Active&#39; status should be used for this action</li>
+					<li>If there are more than one file in an order - they should be merged into one PDF file for download</li>
+					<li>If there is no active PDF file for an order - corresponding cell should be empty</li>
+				</ol>
+				</li>
+				<li>The helper method for getting image file created for <a href=""https&#58;&#47;&#47;tp.ewave.com&#47;268490"" target=""_blank"">&#35;268490</a> request should work with this functionality</li>
+			</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+",2018-10-08,,2018-10-05,2018-10-09,2018-10-05,,246291,26,6,20,0.2308,6,20,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Liliia, ResourceType=GeneralUser, Id=249, LastName=Bolshak, Login=liliia.bolshak}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Viktoria, ResourceType=GeneralUser, Id=122, LastName=Kravchenko, Login=viktoria.kravchenko}",,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=202197}","{ResourceType=Feature, Id=192169, Name=Order PDF}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,276008,"As an admin, I want Extended Cart Price Rules extension to work correctly with Free Gift extension","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>Extended Cart Price Rules extension &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;215761"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;215761</a>&#41; should work correctly with Free Gift extension &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;122270"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;122270</a>&#41;</li>
+</ul>
+</div>
+",2018-10-08,2018-10-08,2018-10-05,2018-10-08,2018-10-08,,246286,0,0,0,1,3,0,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Eldaniz, ResourceType=GeneralUser, Id=188, LastName=Gasymov, Login=eldaniz.gasymov@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Eldaniz, ResourceType=GeneralUser, Id=188, LastName=Gasymov, Login=eldaniz.gasymov@ewave.com}",,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=202190}","{ResourceType=Feature, Id=276007, Name=[Extended Cart Price Rules] Free Gift}",9,0,,FALSE,,,UltraC,To Be Determined,1,
+UserStory,275913,"[Newsletter] As a user, I want newsletter checkbox to be cleared if an order was canceled by Payment Gateway","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<table border=""1"" cellpadding=""0"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td colspan=""2"">
+			<div><strong>AC-1</strong></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div><strong>Given</strong></div>
+			</td>
+			<td>
+			<ul>
+				<li>In the &#39;Create New Quote&#39; setting selected &#39;Canceled&#39; <a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273127"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273127</a></li>
+				<li>User enters Credit Card credentials and submits the order
+				<ul>
+					<li>The order should be canceled based on the payment gateway response &#40;eg. not enough funds&#41; </li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div><strong>When</strong></div>
+			</td>
+			<td>
+			<ul>
+				<li>On the Checkout Step 2</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div><strong>Then</strong></div>
+			</td>
+			<td>
+			<ul>
+				<li>Subscribe to our newsletter - should be unchecked</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div>VE-1</div>
+			</td>
+			<td>
+			<div><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=187523"" /></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div> </div>
+
+<div>Limitation&#58; Should work only with SecurePay</div>
+</div>
+",2018-10-04,,2018-10-04,2018-10-08,,,246197,0,0,0,0,0.5,0,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=30, LastName=Naiman, Login=denis}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.875, ResourceType=EntityState, Id=1376, Name=Dev - Code Review}","{ResourceType=TeamAssignment, Id=202116}","{ResourceType=Feature, Id=201617, Name=Newsletter}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,275912,"[Voucher] As an admin, I want discounts could be applied to vouchers","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>A plugin should be created that will allow to apply cart price rules on Vouchers</li>
+</ul>
+",2018-10-04,2018-10-08,2018-10-04,2018-10-08,2018-10-08,,246196,0,0,0,1,2,0,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Eldaniz, ResourceType=GeneralUser, Id=188, LastName=Gasymov, Login=eldaniz.gasymov@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Eldaniz, ResourceType=GeneralUser, Id=188, LastName=Gasymov, Login=eldaniz.gasymov@ewave.com}",,"{ResourceType=Release, Id=223453, Name=R30}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=202115}","{ResourceType=Feature, Id=215009, Name=Voucher}",9,0,,FALSE,,,UltraC,To Be Determined,1,
+UserStory,275806,"[ON HOLD][ARGUMENTS IN URL] As a system, I want to be able to filter products if there are specified filter arguments in the category/search url","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ 
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:800px"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>
+			<div>&#39;Enable &#39;Apply&quot; button&#39; is set up to &#39;Yes&#39; in Stores &gt; Configuration &gt; Layered Navigation &gt; General &#40;section&#41;<br />
+			OR</div>
+
+			<div>&#39;Enable &#39;Apply&quot; for mobile&#39; is set up to &#39;Yes&#39; in Stores &gt; Configuration &gt; Layered Navigation &gt; General &#40;section&#41;</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>There are specified filter arguments in the category&#47;search url</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<div>The Layered Navigation extension should filter products</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+",,,2018-10-03,2018-10-05,,,246094,3,1,2,0.3333,1,2,2018-10-04,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=209, LastName=Yurevich, Login=denis.yurevich@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=202022}","{ResourceType=Feature, Id=137808, Name=Layered Navigation}",9,0,,FALSE,,,Hartmann,To Be Determined,1,
+UserStory,275528,"[SHIPPING] As a user, I want a shipping cost to be applied to the most low-priced child order","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<ul>
+	<li><strong>Stores - Configuration - Ewave - Order Splitting &#40;tab&#41;</strong></li>
+	<li>The following option should be created&#58;</li>
+</ul>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<thead>
+		<tr>
+			<th scope=""col""><strong>Path</strong></th>
+			<th scope=""col""><strong>Setting</strong></th>
+			<th scope=""col""><strong>Type</strong></th>
+			<th scope=""col""><strong>Scope</strong></th>
+			<th scope=""col""><strong>Mandatory</strong></th>
+			<th scope=""col""><strong>Description</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			<div>Order Splitting Section</div>
+
+			<div>&#40;section&#41;</div>
+			</td>
+			<td>
+			<div>Shipment Distribution Logic</div>
+			</td>
+			<td> Dropdown</td>
+			<td>Website</td>
+			<td style=""text-align:center"">Yes</td>
+			<td>
+			<div>The following option should be added to the dropdown&#58;</div>
+
+			<ul>
+				<li>&#39;Apply to the most low-priced children order&#39;</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div> </div>
+
+<div><strong>Functional requirements&#58;</strong></div>
+
+<ul>
+	<li>If &#39;Shipment Distribution Logic&#39; setting is set up to &#39;Apply to the most low-priced children order&#39;&#58;
+	<ul>
+		<li>Shipping cost should be applied to the cheapest child order</li>
+		<li>If there are two or more child orders with an equal sum&#44; then the first one in the list should be used</li>
+	</ul>
+	</li>
+</ul>
+</div>
+</div>
+",2018-10-04,,2018-10-01,2018-10-09,2018-10-09,,240915,20,5.5,14.5,0.275,5.5,14.5,2018-10-04,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Viktoria, ResourceType=GeneralUser, Id=122, LastName=Kravchenko, Login=viktoria.kravchenko}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Andrey, ResourceType=GeneralUser, Id=294, LastName=Obuhovskiy, Login=andrey.obuhovskiy@ewave.com}",,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=201537}","{ResourceType=Feature, Id=144886, Name=Order Splitting}",9,0,,FALSE,,,TAF,To Be Determined,1,
+UserStory,275513,[AUTOMATION TESTS] - Give an access to Stash for Anna Ostrovskaya to review code,"<div>
+<div>Project&#58; Lego<br />
+Repository&#58; Selenium Tests - Java</div>
+</div>
+",,,2018-10-01,2018-10-01,2018-10-01,,245813,0,0,0,0,0,0,2018-10-01,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Eugene, ResourceType=GeneralUser, Id=562, LastName=Kirshak, Login=eugene.kirshak@ewave.com}","{FirstName=Eugene, ResourceType=GeneralUser, Id=562, LastName=Kirshak, Login=eugene.kirshak@ewave.com}","{FirstName=Alex, ResourceType=GeneralUser, Id=894, LastName=Korotysh, Login=alex.korotysh@ewave.com}",,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=5, ResourceType=Priority, Id=42, Name=P5 - Important}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=201522}","{ResourceType=Feature, Id=153219, Name=Extensions Automation}",9,0,,FALSE,,,Lego_internal,To Be Determined,1,
+UserStory,275434,[Send Invoice To Admin] Solution Architecture,"<h1><span style=""background-color: #add8e6"">Backend</span></h1>
+
+<h3><strong>Database Scheme</strong></h3>
+
+<div>
+<div>&lt;enter a gliffy link here&#44; add additional description if required&gt;</div>
+</div>
+
+<div>
+<div>
+<hr>
+<h3><strong>Class Diagram</strong></h3>
+
+<div> </div>
+
+<div>&lt;enter a gliffy link here&#44; add additional description if required&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Algorithms</strong></h3>
+
+<div>&lt;provide a list of algoritms to be used&#44; add a gliffy diagram if required&gt;</div>
+
+<div> </div>
+
+<div>The following algorithms are used in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width: 500px"">
+	<tbody>
+		<tr>
+			<td><strong>Algorithm Name</strong></td>
+			<td><strong>Link </strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your algorithm name&gt;</td>
+			<td>&lt;link to gliffy&gt;</td>
+			<td>&lt;why we need to create this algorithm OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+<hr>
+<h3><strong>Observers</strong></h3>
+</div>
+</div>
+</div>
+
+<div>
+<div>
+<p>&lt;add a list of observers here&gt;</p>
+</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Plugins</strong></h3>
+
+<p>&lt;add a list of plugins here&gt;</p>
+</div>
+
+<div>
+<hr>
+<h3><strong>Dispatches</strong></h3>
+
+<div>&lt;add a list of dispatches here&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Rewrites</strong></h3>
+
+<p>&lt;add a list of rewrites here&gt;</p>
+</div>
+
+<div>
+<hr>
+<h3><strong>UI components</strong></h3>
+</div>
+
+<div>
+<h2><span style=""font-size: 14px"">&lt;add a list of UI components here&gt;</span></h2>
+
+<hr>
+<h3><strong>Data &#47; Repository API</strong></h3>
+
+<div>&lt;add a list of Data &#47; Repository API here&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>CLI Commands</strong></h3>
+</div>
+
+<div>&lt;add a list of cli commands here as below&gt;</div>
+
+<div> </div>
+
+<div>
+<hr>
+<h3><strong>Cron Jobs</strong></h3>
+</div>
+
+<div>&lt;add a list of cron jobs here&gt;</div>
+
+<div>
+<hr>
+<div>
+<h3>Unit Tests</h3>
+</div>
+
+<div>&lt;add a list of test here&gt;</div>
+
+<div> </div>
+
+<div>
+<div>The following tests are developed in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width: 500px"">
+	<tbody>
+		<tr>
+			<td><strong>Test Name</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your test name&gt;</td>
+			<td>&lt;why we need to create this test OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<hr>
+<h1><span style=""background-color: #008000"">FE Solution Architecture </span></h1>
+
+<div>
+<hr>
+<h3>Description</h3>
+
+<div>&lt;frontend components description&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3>Initializing</h3>
+
+<div>
+<div>
+<p>&lt;describe how to initialize component&#44; the ways of initializing&#44; XML&#44; link to the readme.md file of component and so on&gt; </p>
+
+<hr>
+<div> </div>
+</div>
+</div>
+
+<div>
+<h3>Configuration</h3>
+</div>
+
+<div>
+<p>&lt;describe how to configure component&#44; the ways of configuring&#44; XML and so on&gt; </p>
+
+<div>
+<hr>
+<h3>Requirements</h3>
+</div>
+</div>
+</div>
+
+<p>&lt;add to the section&#58; component relations on a page&#44; technical requirements&#44; component architecture or additional technical requirements&#44; some component events and so on&gt;</p>
+
+<hr>
+<h3>Algorithm</h3>
+
+<p>&lt;decribe the implementation step by step &#40;requests - response&#41;&gt;</p>
+
+<hr>
+<h3>Applying</h3>
+
+<div>&lt;Add the description of the places where created component may be used&#44; fields and pages&gt;</div>
+
+<div>
+<hr>
+<h2>Tips &#40;the section can be removed&#41;</h2>
+
+<ul>
+	<li>Add &quot;None&quot; to section &#40;do not remove empty sections&#41; if the information is not applicable.</li>
+	<li>If you don&#39;t have access to gliffy&#44; see <a href=""https&#58;&#47;&#47;wiki.ewave.com&#47;display&#47;MSKB&#47;Gliffy&#43;-&#43;Credentials"" target=""_blank"">here</a>.</li>
+	<li>Please&#44; use the styling of the list as below&#58;</li>
+</ul>
+
+<div>---</div>
+
+<div>
+<div>New cron jobs will be created&#58;</div>
+
+<ul>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+</ul>
+ ---</div>
+</div>
+</div>
+
+<div> </div>
+</div>
+
+<p> </p>
+",2018-10-03,,2018-10-01,2018-10-03,2018-10-01,,132394,0,0,0,0,0,0,2018-10-03,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Igor, ResourceType=GeneralUser, Id=866, LastName=Tarknaev, Login=igor.tarknaev@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=201469}","{ResourceType=Feature, Id=275433, Name=Send Invoice to Admin}",9,0,,FALSE,,,Cerruti,To Be Determined,1,
+UserStory,275426,"[INVOICE TEMPLATE] As an admin, I want Invoice PDF Template could be customized","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>A possibility to style a admin invoice pdf template  should be added</li>
+	<li>By default template should be used default Magento admin invoice pdf template</li>
+</ul>
+
+<div> </div>
+
+<div>Default template&#58;</div>
+
+<div><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=186738"" /></div>
+</div>
+",2018-10-03,,2018-10-01,2018-10-08,,,245734,19,8.42,10.58,0.4432,20,21,2018-10-03,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Igor, ResourceType=GeneralUser, Id=866, LastName=Tarknaev, Login=igor.tarknaev@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=201461}","{ResourceType=Feature, Id=275418, Name=Custom Invoice PDF}",9,0,,FALSE,,,Cerruti,To Be Determined,1,
+UserStory,275423,"[SEND INVOICE] As an admin, I want to be able to receive an email with PDF Invoice","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>
+			<ul>
+				<li>&#39;Send PDF When Invoice Created&#39; set to &#39;Yes&#39;</li>
+				<li>The respective email specified in &#39;Sender Email&#39;</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>
+			<ul>
+				<li>On Invoice Creation</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<ol>
+				<li> An email with PDF invoice attached to it should be sent to the specified in the setting email</li>
+				<li>Default Text of the Email&#58;</li>
+			</ol>
+
+			<div>Dear Admin&#44;</div>
+
+			<div>Attached is PDF of Invoice &#35;&#40;Invoice Number&#41; for Order&#35;&#40;Order Number&#41;.</div>
+
+			<div>Thank you&#44; Main Website Store&#40;Name of Website Store&#41;&#33;</div>
+
+			<div> </div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+",2018-10-03,,2018-10-01,2018-10-03,,,132395,9,0,9,0,0,9,2018-10-03,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Igor, ResourceType=GeneralUser, Id=866, LastName=Tarknaev, Login=igor.tarknaev@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=201459}","{ResourceType=Feature, Id=275433, Name=Send Invoice to Admin}",9,0,,FALSE,,,Cerruti,To Be Determined,1,
+UserStory,275421,"[NEW SETTING BACKEND] As an admin, I want to be able to specify the following parameters for the extension","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<div>Stores - Configuration - Ewave - Your Extension &#40;tab&#41;</div>
+
+<ul>
+	<li>The following settings will be created&#58;</li>
+</ul>
+
+<div>
+<table border=""1"" cellpadding=""0"" cellspacing=""1"">
+	<thead>
+		<tr>
+			<th>
+			<div><strong>Path</strong></div>
+			</th>
+			<th>
+			<div><strong>Setting</strong></div>
+			</th>
+			<th>
+			<div><strong>Type</strong></div>
+			</th>
+			<th>
+			<div><strong>Scope</strong></div>
+			</th>
+			<th>
+			<div><strong>Description</strong></div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan=""2"">
+			<div>General Settings &#40;section&#41;</div>
+			</td>
+			<td>
+			<div>Send PDF When Invoice Created</div>
+			</td>
+			<td>dropdown</td>
+			<td>
+			<div>storeview</div>
+			</td>
+			<td>
+			<ul>
+				<li>Yes - default value
+				<ul>
+					<li>A PDF Invoice should be sent to the email specified in &#39;Sender Email&#39;</li>
+				</ul>
+				</li>
+				<li>No - emails with PDF Invoice should NOT be sent</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div>Sender Email</div>
+			</td>
+			<td>Text Input</td>
+			<td>storeview</td>
+			<td>
+			<ul>
+				<li>Tip&#58; &#39;Separate by &quot;&#44;&quot; &#39;</li>
+				<li>List of emails where PDF Invoice will be sent</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+",2018-10-03,,2018-10-01,2018-10-03,,,132396,4,0,4,0,0,4,2018-10-03,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Igor, ResourceType=GeneralUser, Id=866, LastName=Tarknaev, Login=igor.tarknaev@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=201457}","{ResourceType=Feature, Id=275433, Name=Send Invoice to Admin}",9,0,,FALSE,,,Cerruti,To Be Determined,1,
+UserStory,275419,[Custom Invoice PDF] Solution Architecture,"<h1><span style=""background-color: #add8e6"">Backend</span></h1>
+
+<h3><strong>Database Scheme</strong></h3>
+
+<div>
+<div>&lt;enter a gliffy link here&#44; add additional description if required&gt;</div>
+</div>
+
+<div>
+<div>
+<hr>
+<h3><strong>Class Diagram</strong></h3>
+
+<div> </div>
+
+<div>&lt;enter a gliffy link here&#44; add additional description if required&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Algorithms</strong></h3>
+
+<div>&lt;provide a list of algoritms to be used&#44; add a gliffy diagram if required&gt;</div>
+
+<div> </div>
+
+<div>The following algorithms are used in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width: 500px"">
+	<tbody>
+		<tr>
+			<td><strong>Algorithm Name</strong></td>
+			<td><strong>Link </strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your algorithm name&gt;</td>
+			<td>&lt;link to gliffy&gt;</td>
+			<td>&lt;why we need to create this algorithm OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+<hr>
+<h3><strong>Observers</strong></h3>
+</div>
+</div>
+</div>
+
+<div>
+<div>
+<p>&lt;add a list of observers here&gt;</p>
+</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Plugins</strong></h3>
+
+<p>&lt;add a list of plugins here&gt;</p>
+</div>
+
+<div>
+<hr>
+<h3><strong>Dispatches</strong></h3>
+
+<div>&lt;add a list of dispatches here&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Rewrites</strong></h3>
+
+<p>&lt;add a list of rewrites here&gt;</p>
+</div>
+
+<div>
+<hr>
+<h3><strong>UI components</strong></h3>
+</div>
+
+<div>
+<h2><span style=""font-size: 14px"">&lt;add a list of UI components here&gt;</span></h2>
+
+<hr>
+<h3><strong>Data &#47; Repository API</strong></h3>
+
+<div>&lt;add a list of Data &#47; Repository API here&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>CLI Commands</strong></h3>
+</div>
+
+<div>&lt;add a list of cli commands here as below&gt;</div>
+
+<div> </div>
+
+<div>
+<hr>
+<h3><strong>Cron Jobs</strong></h3>
+</div>
+
+<div>&lt;add a list of cron jobs here&gt;</div>
+
+<div>
+<hr>
+<div>
+<h3>Unit Tests</h3>
+</div>
+
+<div>&lt;add a list of test here&gt;</div>
+
+<div> </div>
+
+<div>
+<div>The following tests are developed in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width: 500px"">
+	<tbody>
+		<tr>
+			<td><strong>Test Name</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your test name&gt;</td>
+			<td>&lt;why we need to create this test OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<hr>
+<h1><span style=""background-color: #008000"">FE Solution Architecture </span></h1>
+
+<div>
+<hr>
+<h3>Description</h3>
+
+<div>&lt;frontend components description&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3>Initializing</h3>
+
+<div>
+<div>
+<p>&lt;describe how to initialize component&#44; the ways of initializing&#44; XML&#44; link to the readme.md file of component and so on&gt; </p>
+
+<hr>
+<div> </div>
+</div>
+</div>
+
+<div>
+<h3>Configuration</h3>
+</div>
+
+<div>
+<p>&lt;describe how to configure component&#44; the ways of configuring&#44; XML and so on&gt; </p>
+
+<div>
+<hr>
+<h3>Requirements</h3>
+</div>
+</div>
+</div>
+
+<p>&lt;add to the section&#58; component relations on a page&#44; technical requirements&#44; component architecture or additional technical requirements&#44; some component events and so on&gt;</p>
+
+<hr>
+<h3>Algorithm</h3>
+
+<p>&lt;decribe the implementation step by step &#40;requests - response&#41;&gt;</p>
+
+<hr>
+<h3>Applying</h3>
+
+<div>&lt;Add the description of the places where created component may be used&#44; fields and pages&gt;</div>
+
+<div>
+<hr>
+<h2>Tips &#40;the section can be removed&#41;</h2>
+
+<ul>
+	<li>Add &quot;None&quot; to section &#40;do not remove empty sections&#41; if the information is not applicable.</li>
+	<li>If you don&#39;t have access to gliffy&#44; see <a href=""https&#58;&#47;&#47;wiki.ewave.com&#47;display&#47;MSKB&#47;Gliffy&#43;-&#43;Credentials"" target=""_blank"">here</a>.</li>
+	<li>Please&#44; use the styling of the list as below&#58;</li>
+</ul>
+
+<div>---</div>
+
+<div>
+<div>New cron jobs will be created&#58;</div>
+
+<ul>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+</ul>
+ ---</div>
+</div>
+</div>
+
+<div> </div>
+</div>
+
+<p> </p>
+",2018-10-03,,2018-10-01,2018-10-03,,,132356,1,0,1,0,0,1,2018-10-03,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Igor, ResourceType=GeneralUser, Id=866, LastName=Tarknaev, Login=igor.tarknaev@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=201455}","{ResourceType=Feature, Id=275418, Name=Custom Invoice PDF}",9,0,,FALSE,,,Cerruti,To Be Determined,1,
+UserStory,275041,"As a system, I want to have the possibility to replace quotes of orders with SecurePay payment method","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>The &#39;SecurePay&#39; payment method should be added to the &#39;Payment Method&#39; dropdown in the matrix &#40;related story with matrix <a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273127"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273127</a>&#41;</li>
+</ul>
+</div>
+",2018-09-27,2018-10-04,2018-09-27,2018-10-04,2018-10-04,,245403,10,10,0,1,7,0,2018-10-04,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{ResourceType=TestPlan, Id=275870, Name=As a system, I want to have the possibility to replace quotes of orders with SecurePay payment method}","{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=201168}","{ResourceType=Feature, Id=275024, Name=[Replace Quote For Order Status] SecurePay}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,275038,"[AKENEO 2.3.9] As an admin, I want 'Catalog Grid Bundle' to be compatible with Akeneo 2.3.9","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br>
+ </div>
+
+<ul>
+	<li>Catalog Grid Bundle should be compatible with Akeneo 2.3.9</li>
+</ul>
+</div>
+",2018-09-27,2018-10-01,2018-09-27,2018-10-01,2018-10-01,,234915,4,4,0,1,3,0,2018-10-01,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}",,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=201166}","{ResourceType=Feature, Id=266202, Name=[AKENEO] Catalog Grid Images}",9,0,,FALSE,,,MYER,To Be Determined,1,
+UserStory,275036,"[AKENEO 2.3.9] As an admin, I want 'Custom Events Bundle' to be compatible with Akeneo 2.3.9","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br>
+ </div>
+
+<ul>
+	<li>Custom Events Bundle should be compatible with Akeneo 2.3.9</li>
+</ul>
+</div>
+",2018-09-27,2018-10-01,2018-09-27,2018-10-01,2018-10-01,,234914,7,7,0,1,9.7,0,2018-10-01,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}",,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=201164}","{ResourceType=Feature, Id=258009, Name=[AKENEO] Custom Events Bundle}",9,0,,FALSE,,,MYER,To Be Determined,1,
+UserStory,275030,"[Voucher] As an admin, I want to see billing address name for a guest customer in a report functionality for Vouchers","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<ul>
+	<li>In the Vouchers Report at &#39;Reports &gt; Marketing &gt; Vouchers&#39; page
+	<ul>
+		<li>The &#39;Customer Name&#39; &#40;Owner&#41; field should include the Billing Address name values for a guest customer</li>
+	</ul>
+	</li>
+</ul>
+</div>
+</div>
+",2018-10-04,2018-10-09,2018-09-27,2018-10-09,2018-10-09,,245389,12,12,0,1,10.3,0,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Ivan, ResourceType=GeneralUser, Id=110, LastName=Ivanov, Login=ivan.ivanov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Ivan, ResourceType=GeneralUser, Id=110, LastName=Ivanov, Login=ivan.ivanov@ewave.com}","{ResourceType=TestPlan, Id=276090, Name=[Voucher] Billing address name for a guest customer in a Voucher report}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=201160}","{ResourceType=Feature, Id=215009, Name=Voucher}",9,0,,FALSE,,,UltraC,To Be Determined,1,
+UserStory,274930,"[B2B][Neverfail][Outlet Group] As an admin, I want to be able to link/delink outlets to Outlet Group","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>Outlet Group Page should be created</li>
+	<li>the page should contain the gird with outlets assigned to the Outlet Group
+	<ul>
+		<li>Grid should contain next columns&#58;
+		<ul>
+			<li>Email</li>
+			<li>Outlet Customer ID</li>
+			<li>Outlet Name</li>
+			<li>Action Column
+			<ul>
+				<li>Edit
+				<ul>
+					<li>redirects an admin to the Outlet Edit Page</li>
+				</ul>
+				</li>
+				<li>Delink
+				<ul>
+					<li>&#39;Delink&#39; button should delink Outlet from the Outlet Group&#44; that Customer belongs to. If a backend user wants to delink Outlet from the customer&#44; a pop-up notification should be displayed &#40;shown below&#41;. Delinking will then create a group of its own</li>
+					<li>Delink Pop-up Message &#58;
+					<ul>
+						<li><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=186244"" /></li>
+						<li>Title&#58; &#39;Delink 2342432&#40;Customer_ID&#41;&#47;Outlet 1&#40;Outlet_Name&#41;&#39;</li>
+						<li>Are you sure you want to delink 2342432&#47;Outlet 1</li>
+					</ul>
+					</li>
+					<li><span style=""background-color:#40e0d0"">If the last outlet in the Outlet Group should be delinked&#44; than &#39;delink&#39; action should be hidden</span></li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li>The grid should has search and filtering by Email&#44; Customer ID and Outlet Name</li>
+	</ul>
+	</li>
+</ul>
+
+<ul>
+	<li>Outlet Searchable Dropdown
+	<ul>
+		<li>possible to search by Customer_ID&#44; Outlet_Name</li>
+		<li>Admin is able to select the required outlet in the dropdown</li>
+	</ul>
+	</li>
+	<li>&#39;Link Outlet&#39; button
+	<ul>
+		<li>clicking displays a pop-up to a user
+		<ul>
+			<li>Tittle&#58; &#39;Link 101154343&#40;Customer_ID_&#47; Outlet 1&#40;Outlet_Name&#41;&#39;</li>
+			<li>Message&#58; Are you sure you want to link 101154343&#47; Outlet 1&#63;</li>
+			<li>&#39;Cancel&#39; clicking closes the pop-up</li>
+			<li>&#39;OK&#39; clicking links the selected outlet to the respective outlet group with the page reload</li>
+		</ul>
+		</li>
+		<li>&#8203;<span style=""background-color:#40e0d0"">If the outlet that should be linked is the last in its outlet group it should be linked to the respective outlet group and the old outlet group should be deleted</span></li>
+	</ul>
+	</li>
+</ul>
+
+<div><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=186247"" /></div>
+",,,2018-09-26,2018-10-02,2018-10-02,,245298,37,0,37,0,0,37,2018-09-26,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=30, LastName=Naiman, Login=denis}",,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=201057}","{ResourceType=Feature, Id=203679, Name=[B2B][Neverfail] Team Management}",9,0,,FALSE,,,Neverfail,To Be Determined,1,
+UserStory,274802,"[SEGMENT MESSAGE] As a customer, I want to be able to see a message if I am in a segment with a special conditions","<div>
+<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<div>
+<ul>
+	<li>On &#39;Customers &gt; Customer Groups &gt; Customer Group Detail&#39; page the following settings should be created for each customer group&#58;</li>
+</ul>
+
+<div>
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:900px"">
+	<tbody>
+		<tr>
+			<td><strong>Path</strong></td>
+			<td><strong>Setting</strong></td>
+			<td><strong>Type</strong></td>
+			<td><strong>Mandatory&#63;</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td colspan=""1"" rowspan=""2"">Customer Group -&gt; Additional Settings &#40;tab&#41;</td>
+			<td>Customer Segment With Special Promotion</td>
+			<td>Dropdown</td>
+			<td>No</td>
+			<td>
+			<ul>
+				<li>List of available Customer Segments</li>
+				<li>Default - empty value&#44; means no special promotion available</li>
+				<li>Tip&#58; &#39;Select a Customer Segment that have a special promotion for this customer group&#39;</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Message On My Account For Special Promotion</td>
+			<td>Text</td>
+			<td>No</td>
+			<td>
+			<ul>
+				<li>Default - &#39;You have free shipping and returns on your next order when placed within &#123;&#123;X&#125;&#125; days.&#39;</li>
+				<li>Tip&#58; &#39;You could use &#123;&#123;X&#125;&#125; placeholder to define the amount of days special promotion will be available for a customer&#39;</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div> </div>
+
+<div> </div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:800px"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>
+			<div>Customer is a member of the Extended Customer Group<br />
+			AND</div>
+
+			<div>Customer related to a Segment defined in &#39;Customer Segment With Special Promotion&#39; setting for the Group</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>Customer is on My Account &gt; Dashboard page</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<div>System should show to the customer a message set up in &#39;Message On My Account For Special Promotion&#39; setting</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+",2018-09-25,2018-10-01,2018-09-25,2018-10-01,2018-09-28,,132320,14,14,0,1,16.5,0,2018-10-01,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Ivan, ResourceType=GeneralUser, Id=110, LastName=Ivanov, Login=ivan.ivanov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{ResourceType=TestPlan, Id=274873, Name=[Extended Customer Segments] Message for Special Promotions}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200940}","{ResourceType=Feature, Id=274799, Name=[Extended Customer Segments] Extended Customer Groups}",9,0,,FALSE,,,Trybe,To Be Determined,1,
+UserStory,274800,[Extended Customer Segments][Extended Customer Groups] Solution Architecture,"<h1><span style=""background-color:#add8e6"">Backend</span></h1>
+
+<h3>The module will be created as an addon for Ewave_ExtendedCustomerGroups and Ewave_ExtendedCustomerSegments.</h3>
+
+<div>
+<div>
+<hr />
+<h3><strong>Algorithms</strong></h3>
+
+<div> </div>
+
+<div>The following algorithms are used in the extension&#58;</div>
+
+<div>
+<div> </div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td><strong>Algorithm Name</strong></td>
+			<td><strong>Link </strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>add fields to additional settings tab on group edit page in back office</td>
+			<td> </td>
+			<td>
+			<div>For adding fields  to additional settings tab on group edit page use ui component customer_group_form.xml</div>
+			</td>
+		</tr>
+		<tr>
+			<td>display message process</td>
+			<td> </td>
+			<td>If customer is a member of the Extended Customer Group and related to a Segment defined in &#39;Customer Segment With Special Promotion&#39; setting for the Group&#44; system should show to the customer a message on My Account &gt; Dashboard page</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div>
+<div> </div>
+
+<div>1. Source model </div>
+
+<div>
+<pre>
+Ewave&#92;ExtendedCustomerGroupSegment&#92;Model&#92;Config&#92;Source&#92;CustomerSegments</pre>
+</div>
+
+<div>will be created to provide list of all available segments.</div>
+
+<div> </div>
+
+<div>2. Block will be added to layout customer_account_index.xml </div>
+
+<div>
+<pre>
+&lt;block class&#61;&quot;Ewave&#92;ExtendedCustomerGroupSegment&#92;Block&#92;Account&#92;Dashboard&#92;Message&quot; before&#61;&quot;-&quot; name&#61;&quot;customer_account_dashboard_message_special_promotion&quot; as&#61;&quot;message_special_promotion&quot;
+       template&#61;&quot;Ewave_ExtendedCustomerGroupSegment&#58;&#58;account&#47;dashboard&#47;message.phtml&quot;&#47;&gt;</pre>
+</div>
+
+<div> </div>
+</div>
+</div>
+</div>
+
+<div>
+<hr />
+<h3><strong>Data &#47; Repository API</strong></h3>
+
+<div>
+<pre>
+Ewave&#92;ExtendedCustomerGroupSegment&#92;Api&#92;GroupRepositoryInterface</pre>
+
+<div>which extended 
+<pre>
+Ewave&#92;ExtendedCustomerGroup&#92;Api&#92;Data&#92;GroupInterface</pre>
+</div>
+</div>
+</div>
+
+<div>
+<hr />
+<h3><strong>CLI Commands</strong></h3>
+</div>
+
+<div>&lt;add a list of cli commands here as below&gt;</div>
+
+<div> </div>
+
+<div>
+<hr />
+<h3><strong>Cron Jobs</strong></h3>
+</div>
+
+<div>&lt;add a list of cron jobs here&gt;</div>
+
+<div>
+<hr />
+<div>
+<h3>Unit Tests</h3>
+</div>
+
+<div>&lt;add a list of test here&gt;</div>
+
+<div> </div>
+
+<div>
+<div>The following tests are developed in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:500px"">
+	<tbody>
+		<tr>
+			<td><strong>Test Name</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your test name&gt;</td>
+			<td>&lt;why we need to create this test OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<hr />
+<h1><span style=""background-color:#008000"">FE Solution Architecture </span></h1>
+
+<div>
+<hr />
+<h3>Description</h3>
+
+<div>&lt;frontend components description&gt;</div>
+</div>
+
+<div>
+<hr />
+<h3>Initializing</h3>
+
+<div>
+<div>
+<p>&lt;describe how to initialize component&#44; the ways of initializing&#44; XML&#44; link to the readme.md file of component and so on&gt; </p>
+
+<hr />
+<div> </div>
+</div>
+</div>
+
+<div>
+<h3>Configuration</h3>
+</div>
+
+<div>
+<p>&lt;describe how to configure component&#44; the ways of configuring&#44; XML and so on&gt; </p>
+
+<div>
+<hr />
+<h3>Requirements</h3>
+</div>
+</div>
+</div>
+
+<p>&lt;add to the section&#58; component relations on a page&#44; technical requirements&#44; component architecture or additional technical requirements&#44; some component events and so on&gt;</p>
+
+<hr />
+<h3>Algorithm</h3>
+
+<p>&lt;decribe the implementation step by step &#40;requests - response&#41;&gt;</p>
+
+<hr />
+<h3>Applying</h3>
+
+<div>&lt;Add the description of the places where created component may be used&#44; fields and pages&gt;</div>
+
+<div>
+<hr />
+<h2>Tips &#40;the section can be removed&#41;</h2>
+
+<ul>
+	<li>Add &quot;None&quot; to section &#40;do not remove empty sections&#41; if the information is not applicable.</li>
+	<li>If you don&#39;t have access to gliffy&#44; see <a href=""https&#58;&#47;&#47;wiki.ewave.com&#47;display&#47;MSKB&#47;Gliffy&#43;-&#43;Credentials"" target=""_blank"">here</a>.</li>
+	<li>Please&#44; use the styling of the list as below&#58;</li>
+</ul>
+
+<div>---</div>
+
+<div>
+<div>New cron jobs will be created&#58;</div>
+
+<ul>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+</ul>
+ ---</div>
+</div>
+</div>
+
+<div> </div>
+</div>
+
+<p> </p>
+",2018-09-26,2018-09-27,2018-09-25,2018-09-27,,,132245,0,0,0,1,0,0,2018-09-27,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Liliia, ResourceType=GeneralUser, Id=249, LastName=Bolshak, Login=liliia.bolshak}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200938}","{ResourceType=Feature, Id=274799, Name=[Extended Customer Segments] Extended Customer Groups}",9,0,,FALSE,,,Trybe,To Be Determined,1,
+UserStory,274770,"[PAYMENT DETAILS] As an admin, I want detail payment information to be available on the Order's Detail Page","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ 
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width:800px"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>Credit Card Braintree was selected as a payment method for an Order</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>Admin is on the Order Detail Page in the back-office<br />
+			OR<br />
+			Admin observe an Order confirmation email</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<div>Payment Information section should display the following information&#58;</div>
+
+			<ul>
+				<li>Payment Method&#58;    Credit Card &#40;Braintree&#41;</li>
+				<li>Credit Card Type&#58;    Visa</li>
+				<li>Credit Card Number&#58;    xxxx-1111</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+",2018-10-01,2018-10-03,2018-09-25,2018-10-03,2018-10-03,,245142,10,10,0,1,15,0,2018-10-03,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{ResourceType=TestPlan, Id=275750, Name=[PAYMENT DETAILS] As an admin, I want detail payment information to be available on the Order's Detail Page}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200918}","{ResourceType=Feature, Id=227003, Name=Braintree}",9,0,,FALSE,,,Platypus,To Be Determined,1,
+UserStory,274767,"[HELPER] As a system, I want Club Name, ID and Event ID to be available in the module's helper method","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ </div>
+
+<ul>
+	<li>
+	<div>ClubEvent module&#39;s helper method should have the following data available after add to cart action&#58;</div>
+
+	<ul>
+		<li>
+		<div>Club ID</div>
+		</li>
+		<li>
+		<div>Club Name</div>
+		</li>
+		<li>
+		<div>Event ID</div>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<div>Invalid cases</div>
+
+	<ul>
+		<li>
+		<div>2 memberships from different clubs</div>
+		</li>
+		<li>
+		<div>2 ticket for different events</div>
+		</li>
+		<li>
+		<div>
+		<div>mebership &#43; ticket</div>
+		</div>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+",2018-10-01,,2018-09-25,2018-10-01,2018-10-01,,245140,4,4,0,1,4,0,2018-10-01,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}",,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=200916}","{ResourceType=Feature, Id=190344, Name=[Club] Event}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,274615,"[Image Technical Validation] As a system, I want Image Technical Validation to be updated, so that various types of image validation could be applied to various attributes","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+<br />
+<strong>Functional requirements&#58;</strong></div>
+
+<ol>
+	<li>
+	<p>An ability to have several types of validations should be implemented</p>
+	</li>
+	<li>
+	<p>The particular type of validation should be applied to the particular attribute.</p>
+	</li>
+	<li>
+	<p>Validation type should be configured via the YML file &#40;as per now&#41;</p>
+	</li>
+	<li>
+	<p>User should be able to choose the type of validation for the particular attribute in the attribute settings </p>
+
+	<ul>
+		<li>
+		<p>A dropdown control should be added for image attributes with validation types as values</p>
+		</li>
+	</ul>
+	</li>
+</ol>
+</div>
+",,,2018-09-24,2018-09-24,,,244993,21,0,21,0,0,21,2018-09-24,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=260857, Name=R42}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=200799}","{ResourceType=Feature, Id=223282, Name=[AKENEO] Image Technical Validation}",9,0,,FALSE,,,MYER,To Be Determined,1,
+UserStory,274519,"[POP-UP] As a user, I want to be able to see a pop-up when adding adding products from different C&C stores","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<div>Stores - Configuration - Shipping Methods</div>
+
+<ul>
+	<li>The following settings will be created&#58;</li>
+</ul>
+
+<div>
+<table border=""1"" cellpadding=""0"" cellspacing=""1"">
+	<thead>
+		<tr>
+			<th>
+			<div><strong>Path</strong></div>
+			</th>
+			<th>
+			<div><strong>Setting</strong></div>
+			</th>
+			<th>
+			<div><strong>Type</strong></div>
+			</th>
+			<th>
+			<div><strong>Scope</strong></div>
+			</th>
+			<th>
+			<div><strong>Description</strong></div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan=""2"">
+			<div>Click and Collect</div>
+
+			<div>&#40;section&#41;</div>
+
+			<div> </div>
+			</td>
+			<td>
+			<div>Display Popup</div>
+			</td>
+			<td>
+			<div>dropdown</div>
+			</td>
+			<td>
+			<div>website</div>
+			</td>
+			<td>
+			<ul>
+				<li>This setting should be displayed if only &#39;Enable Single Store In Cart Restriction&#39; is set to &#39;Yes&#39;</li>
+				<li>No - default value
+				<ul>
+					<li>If &#39;No&#39; is selected&#44; then the pop-up should NOT be displayed</li>
+				</ul>
+				</li>
+				<li>Yes
+				<ul>
+					<li>Then the pop-up should be displayed&#58;
+					<ul>
+						<li>when a user adds a product with the C&#38;C store that differs with the C&#38;C store of the previously added product</li>
+						<li>when the product is unavailable in the C&#38;C store of the previously added product</li>
+					</ul>
+					</li>
+					<li>Pop-up should contain&#58;
+					<ul>
+						<li>message that is specified in &#39;Popup Message&#39; setting</li>
+					</ul>
+					</li>
+					<li>&#39;Yes&#39; button&#44; if a customer clicks the button&#44; than the product should be added to the cart with Standard Delivery and &#39;C&#38;C&#39; delivery should be converted to Standard Delivery for the whole cart.</li>
+					<li>&#39;No&#39; button&#44; If a customer clicks the popup should be closed</li>
+				</ul>
+				</li>
+				<li>Tips&#58; Allow to display a popup when a customer adds a product to the cart with the store different to the store of the previously added product and that product is not available in the store of the previously added product</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div>Popup Message</div>
+			</td>
+			<td>
+			<div>text</div>
+			</td>
+			<td>
+			<div>storeview</div>
+			</td>
+			<td>
+			<ul>
+				<li>This setting should be displayed if only &#39;Enable Single Store In Cart Restriction&#39; is set to &#39;Yes&#39; and the &#39;Display Popup&#39; is set to &#39;Yes&#39; </li>
+				<li>The specified text should be displayed in the popup</li>
+			</ul>
+
+			<div>Tips&#58; </div>
+
+			<ul>
+				<li>You could use &#123;STORE_NAME_1&#125; placeholder to define a store name of a previously added product</li>
+				<li>You could use &#123;STORE_NAME_2&#125; placeholder to define a store name  of  a product adding to the cart</li>
+				<li>You could use &#123;PRODUCT_NAME_1&#125; placeholder to define a previously added product name </li>
+				<li>You could use &#123;PRODUCT_NAME_2&#125; placeholder to define a product that should be added to the cart</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+",,,2018-09-24,2018-09-24,,,244966,44,0,44,0,0,44,2018-09-24,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=200713}","{ResourceType=Feature, Id=139262, Name=Click & Collect}",9,0,,FALSE,,,TAF,To Be Determined,1,
+UserStory,274379,Mentorship & Reviews (RND Internal Activities),"<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+<br />
+<span style=""font-size:22px"">This User Story should be used ONLY to send time to Clarizen&#39;s &#39;Mentorship &#38; Reviews&#39; task in &#39;RND Internal Activities&#39; project</span></div>
+</div>
+",,,2018-09-21,2018-10-09,,,244830,0,0,0,0,10.45,0,2018-09-21,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=200593}","{ResourceType=Feature, Id=135853, Name=Time tracking (meetings and so on)}",9,0,,FALSE,,,Lego_internal,To Be Determined,1,
+UserStory,274363,Cloud based demo for Sussan presale process,"<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<div> </div>
+
+<ul>
+	<li>At Cloud LEGO development server dev6.ewavedemo.com
+	<ol>
+		<li>https&#58;&#47;&#47;sussan.ewavedemo.com&#47; domain should be created</li>
+		<li>Clear Magento Commerce &#40;EE&#41; v.2.2.4 should be installed </li>
+		<li>Separate container should be used for this demo</li>
+		<li>Magento sample data should be installed for this demo</li>
+	</ol>
+	</li>
+</ul>
+</div>
+",,,2018-09-21,2018-09-21,2018-09-21,,233929,0,0,0,0,0,0,2018-09-21,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Nazar, ResourceType=GeneralUser, Id=79, LastName=Marinich, Login=nazar}","{FirstName=Nazar, ResourceType=GeneralUser, Id=79, LastName=Marinich, Login=nazar}","{FirstName=Alex, ResourceType=GeneralUser, Id=894, LastName=Korotysh, Login=alex.korotysh@ewave.com}",,"{ResourceType=Release, Id=264689, Name=R44}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=200581}","{ResourceType=Feature, Id=148348, Name=Basic Demo Configuration}",9,0,,FALSE,,,Lego_internal,To Be Determined,1,
+UserStory,274314,"[PRODUCT URL] As a system, I want BookingURL to use transmitted Product Name","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ </div>
+
+<ul>
+	<li>Product URL &#40;&#39;BookingURL&#39;&#41; structure that is sent to Sitecore should be changed
+	<ul>
+		<li>System should transmit Product Name for the URL value in &#39;BookingURL&#39; attribute</li>
+		<li>
+		<div>Product&#39;s URL Key value should be used for this purpose</div>
+		</li>
+		<li>
+		<div>Now&#58; https&#58;&#47;&#47;country.racing.com&#47;product-page&#63;bookingUrl&#61;https&#58;&#47;&#47;store.countryracing.com.au&#47;catalog&#47;product&#47;view&#47;id&#47;2118</div>
+		</li>
+		<li>
+		<div>Should be&#58; https&#58;&#47;&#47;country.racing.com&#47;product-page&#63;bookingUrl&#61;https&#58;&#47;&#47;store.countryracing.com.au&#47;product-name.html</div>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<div> </div>
+</div>
+",2018-09-21,,2018-09-20,2018-10-02,2018-10-01,,244771,9,1,8,0.1111,1,8,2018-10-01,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Viktoria, ResourceType=GeneralUser, Id=122, LastName=Kravchenko, Login=viktoria.kravchenko}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Viktoria, ResourceType=GeneralUser, Id=122, LastName=Kravchenko, Login=viktoria.kravchenko}",,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5.5, ResourceType=EntityState, Id=1372, Name=Tested on DEMO}","{ResourceType=TeamAssignment, Id=200537}","{ResourceType=Feature, Id=194626, Name=Sitecore Integration}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,274094,"[SEPARATE ITEMS] As a user, I want to be able to separate Bundle items on Add to Cart action","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>Admin should be able to define if Magento should separate bundle items to particular products or leave the bundle as a solid product after &#39;Add to Cart&#39; action.</li>
+	<li>&#8216;Separate Cart Items&#8217; setting should be used for this purpose.
+	<ol>
+		<li>This setting should be set up for each bundle product and has &#8216;No&#8217; value by default.</li>
+		<li>&#8216;No&#8217; value means that the bundle product will be added to the cart as a single line item.</li>
+		<li>If the setting is set up to &#8216;Yes&#8217; &#8211; Magento will separate bundle to multiple lines&#44; so it will look like customer has added several products to the cart.</li>
+		<li>There is no connection between items after separation &#40;add to cart action&#41;.</li>
+	</ol>
+	</li>
+</ul>
+
+<div><strong>Visual example&#58;</strong></div>
+
+<div><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=184909"" /></div>
+</div>
+</div>
+",2018-09-19,2018-09-19,2018-09-19,2018-09-19,,,244558,0,0,0,1,0,0,2018-09-19,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200374}","{ResourceType=Feature, Id=212936, Name=Extended Bundle Product}",9,0,,FALSE,,,Lego_internal,To Be Determined,1,
+UserStory,274066,"[SORT ORDER] As an admin, I want to be able to set up Order's sort order","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<div>
+<div> </div>
+
+<ul>
+	<li>At &#39;Stores - Configuration - Ewave - Order Increment Id&#39;</li>
+	<li>The following settings should be created&#58;</li>
+</ul>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<thead>
+		<tr>
+			<th scope=""col""><strong>Path</strong></th>
+			<th scope=""col""><strong>Setting</strong></th>
+			<th scope=""col""><strong>Type</strong></th>
+			<th scope=""col""><strong>Scope</strong></th>
+			<th scope=""col""><strong>Description</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan=""1"" rowspan=""2"">
+			<div>General Settings &#40;section&#41;</div>
+			</td>
+			<td>
+			<div>Show Subsequent Orders Before The Original In My Account</div>
+			</td>
+			<td>dropdown&#44; Yes&#47;No</td>
+			<td>Website</td>
+			<td>
+			<ul>
+				<li>Default - &#39;No&#39;</li>
+				<li>Tip&#58; &#39;If set up to &#39;Yes&#39;&#44; subsequent orders will be shown before the original order on storefront&#39;</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Show Subsequent Orders Before The Original In Admin Order Grid</td>
+			<td>dropdown&#44; Yes&#47;No</td>
+			<td>Website</td>
+			<td>
+			<ul>
+				<li>Default - &#39;No&#39;</li>
+				<li>Tip&#58; &#39;If set up to &#39;Yes&#39;&#44; subsequent orders will be shown before the original order on Admin Order Grid&#39;</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div> </div>
+
+<div><strong>Functional Requirements&#58;</strong></div>
+
+<ol>
+	<li>If set up to &#39;No&#39; - system should use default Magento order sorting&#44; e.g.&#58;
+	<ul>
+		<li>order 9<br />
+		order 8_2<br />
+		order 8_1<br />
+		order 8<br />
+		order 7</li>
+	</ul>
+	</li>
+	<li>If set up to &#39;Yes&#39; - subsequent orders should be shown before the original ones in My Account section&#44; e.g.&#58;
+	<ul>
+		<li>order 9<br />
+		order 8<br />
+		order 8_1<br />
+		order 8_2<br />
+		order 7</li>
+	</ul>
+	</li>
+</ol>
+",2018-09-25,2018-09-27,2018-09-19,2018-09-27,2018-09-27,,244532,7,7,0,1,12.8,0,2018-09-27,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{ResourceType=TestPlan, Id=275040, Name=[SORT ORDER] As an admin, I want to be able to set up Order's sort order}","{ResourceType=Release, Id=271209, Name=R47}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200360}","{ResourceType=Feature, Id=224655, Name=Order Increment Id}",9,0,,FALSE,,,TAF,To Be Determined,1,
+UserStory,274059,"[GRID FILTER] As an admin, I want to be able to use child\parent orders visibility filter on orders grid","<div>ACCEPTANCE CRITERIA&#58;
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>On &#39;Sales &gt; Orders &gt; Filters &#40;tab&#41;&#39;
+	<ul>
+		<li>&#39;Order Type&#39; filter should be added</li>
+		<li>This should be a dropdown with the following options&#58;
+		<ul>
+			<li>&#39;Show All&#39; - should be selected by default</li>
+			<li>&#39;Hide Child Orders&#39; - if selected&#44; system should hide &#39;child&#39; orders on the grid</li>
+			<li>&#39;Hide Parent Orders&#39; - if selected&#44; system should hide &#39;parent&#39; orders on the grid</li>
+		</ul>
+		</li>
+		<li>Separate setting to show&#92;hide this filter should be added at<br />
+		Ewave &gt; Order Splitting &gt; Order Splitting Settings &gt; Display Order Type Filter On Order Grid
+		<ul>
+			<li>This should be &#39;Yes&#39;&#92;&#39;No&#39; dropdown with website scope. Default value - &#39;Yes&#39;</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+</div>
+",2018-09-24,2018-09-27,2018-09-19,2018-09-27,2018-09-27,,244526,8,8,0,1,12.3,0,2018-09-27,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{ResourceType=TestPlan, Id=274766, Name=[GRID FILTER] As an admin, I want to be able to use child\parent orders visibility filter on orders grid}","{ResourceType=Release, Id=271209, Name=R47}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200356}","{ResourceType=Feature, Id=144886, Name=Order Splitting}",9,0,,FALSE,,,TAF,To Be Determined,1,
+UserStory,273966,Cloud based demo for Drupal 8 CMS,"<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<div> </div>
+
+<ul>
+	<li>At Cloud LEGO development server dev6.ewavedemo.com
+	<ol>
+		<li>https&#58;&#47;&#47;drupal.ewavedemo.com&#47; domain should be created</li>
+		<li>Clear Drupal CMS v.8.6.1 should be installed <br>
+		https&#58;&#47;&#47;www.drupal.org&#47;download</li>
+		<li>Separate container should be used for this demo</li>
+	</ol>
+	</li>
+</ul>
+</div>
+",2018-09-18,2018-09-24,2018-09-18,2018-09-24,2018-09-19,,233930,0,0,0,1,16,0,2018-09-24,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Nazar, ResourceType=GeneralUser, Id=79, LastName=Marinich, Login=nazar}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,"{ResourceType=Release, Id=271209, Name=R47}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200273}","{ResourceType=Feature, Id=148348, Name=Basic Demo Configuration}",9,0,,FALSE,,,Lego_internal,To Be Determined,1,
+UserStory,273937,"[WIDGET HANDLES] As an admin, I want to be able to specify Layout Handles for a banner widget to appear","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<div> </div>
+
+<div>
+<ul>
+	<li>At &#39;Content - Widget&#39; in widget type&#58; &#39;Banner Rotator&#39;
+	<ul>
+		<li>The following settings should be created&#58;</li>
+	</ul>
+	</li>
+</ul>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td style=""width:148px""><strong>Path</strong></td>
+			<td style=""width:91px""><strong>Setting</strong></td>
+			<td><strong>Type</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td colspan=""1"" rowspan=""1"" style=""width:148px"">
+			<div>Widget Options &#40;section&#41;</div>
+			</td>
+			<td style=""width:91px"">
+			<div>Remove From Layout Handles</div>
+			</td>
+			<td>multiselect</td>
+			<td>
+			<ul>
+				<li>List of layout handles available in system should be shown in this setting</li>
+				<li>Default - no selection</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div> </div>
+
+<div> </div>
+
+<div><strong>Functional requirements&#58;</strong></div>
+
+<ol>
+	<li>Banner Rotator widget should NOT be shown on the selected layout handles.</li>
+	<li>No selection means widget will be shown on all layout handles.</li>
+</ol>
+</div>
+</div>
+",,,2018-09-18,2018-10-09,,,244418,18,0,18,0,0,18,2018-09-18,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=30, LastName=Naiman, Login=denis}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}",,,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=200246}","{ResourceType=Feature, Id=149592, Name=Banner Rotator}",9,0,,FALSE,,,Trybe,To Be Determined,1,
+UserStory,273926,"[MEMBERSHIP REPORT] As an admin, I want to be able to see memberships report and export it",1970-01-01,2018-10-03,,2018-09-18,2018-10-09,2018-10-08,,244407,34,25.38,8.62,0.7465,25.8,8.7,2018-10-08,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Denis, ResourceType=GeneralUser, Id=209, LastName=Yurevich, Login=denis.yurevich@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Karina, ResourceType=GeneralUser, Id=668, LastName=Tsymbal, Login=karina.tsymbal@ewave.com}","{ResourceType=TestPlan, Id=275630, Name=[MEMBERSHIP REPORT] Memberships report availability and exporting}","{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=200238}","{ResourceType=Feature, Id=196591, Name=[Event] Generate Report}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,273920,"[Category Attribute To Product] As a system, I want to be compatible with CategoryProperties bundle","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ </div>
+
+<ol>
+	<li>CategoryAttributeToProduct bundle should be compatible with CategoryProperties bundle</li>
+</ol>
+</div>
+",2018-09-18,2018-09-18,2018-09-18,2018-09-19,2018-09-18,,244401,4,4,0,1,2.5,0,2018-09-18,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}",,,,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200234}","{ResourceType=Feature, Id=222751, Name=[AKENEO] Category Attribute To Product}",9,0,,FALSE,,,MYER,To Be Determined,1,
+UserStory,273912,"[Billable Link] As a customer, I want to be able to pay for a billable link","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>
+			<ul>
+				<li>A customer opens the received billable link from email</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>
+			<ul>
+				<li>A customer pays</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<ol>
+				<li> Checkout Step 2 Page should be used with some changes
+				<ul>
+					<li>The page should contain Payment Method block</li>
+					<li><span style=""background-color:#40e0d0"">&#39;Grand total&#39; should be renamed to &#39;Amount To Pay&#39;</span></li>
+				</ul>
+				</li>
+				<li> Customer is able to select the needed payment method and proceed payment.</li>
+				<li>After user proceeds payment&#44; if &#39;Create Order&#39; is set to &#39;Yes&#39;&#44; than Magento order should be created.
+				<ul>
+					<li>if &#39;Create Order&#39; is set to &#39;No&#39;&#44; than Magento order should NOT be created</li>
+				</ul>
+				</li>
+				<li>if &#39;Create Order&#39; is set to &#39;Yes&#39; button should be &#39;Place Order&#39;
+				<ul>
+					<li>If &#39;Create Order&#39; is set to &#39;No&#39; button should be &#39;Make Paymnet&#39;</li>
+				</ul>
+				</li>
+				<li>If a user leaves this page without paying&#44; than the virtual product should NOT be stored in a customer current quote. When user comes back to website the virtual product should NOT be in his cart</li>
+				<li>If a user proceeds payment&#44; than an email should be sent to an email address specified in &#39;Send Admin Email To&#39; &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273885"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273885</a>&#41;
+				<ol>
+					<li>The template is specified in &#39;Admin Email Template&#39; setting  &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273885"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273885</a>&#41;</li>
+				</ol>
+				</li>
+				<li>Taxes should NOT be added and counted for such types of orders</li>
+				<li><s><span style=""background-color:#40e0d0"">If there is a discount&#40;by Cart Price Rule&#41; that should be applied to the order&#44; than this discount should NOT be applied to the order that is generated for Billable Link</span></s></li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=186921"" /></td>
+		</tr>
+		<tr>
+			<td>Limitations</td>
+			<td>
+			<ol>
+				<li>Customer is NOT able to use Store Credits</li>
+				<li>Customer is NOT able to apply Gift Cart</li>
+				<li>Customer is NOT able to apply Discount Code</li>
+			</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div> </div>
+</div>
+",2018-10-03,,2018-09-18,2018-10-08,2018-10-05,,244394,34,28,6,0.8235,26.95,6,2018-10-05,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=30, LastName=Naiman, Login=denis}","{ResourceType=TestPlan, Id=276304, Name=[Billable Link] Customer paying for a billable link on special Checkout page}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=200228}","{ResourceType=Feature, Id=273883, Name=Billable Link}",9,0,,FALSE,,,D'Urban,To Be Determined,1,
+UserStory,273910,"[Billable Link] As an admin, I want to be able to send a billable link to a customer","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>Admin is on the Order View Page</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>Admin sends a payable link to a customer</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<ol>
+				<li> &#39;Send Billable Link&#39; button should be added</li>
+				<li> Clicking  &#39;Send Billable Link&#39; button should open a pop-up &#40;should be displayed for all order statuses&#41;
+				<ul>
+					<li>Pop should contain&#58;
+					<ul>
+						<li>&#39;Amount to Pay&#39; input field. An admin specifies the amount that a customer should pay. Should set special price for a virtual product created for the extension &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273885"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273885</a>&#41;
+						<ul>
+							<li>the entered value should be greater than 0</li>
+							<li>only number could be entered</li>
+							<li>The currency should be the same as for the order</li>
+						</ul>
+						</li>
+						<li>&#39;Send&#39; clicking sends to the respective user&#39;s email address an email with the link &#40;Customer Email Template is specified in general settings&#58; <a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273885"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273885</a>&#41;
+						<ul>
+							<li>the billable link should be generated</li>
+						</ul>
+						</li>
+						<li>&#39;Cancel&#39; clicking closes the pop-up</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=184711"" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<div> </div>
+
+<div> </div>
+</div>
+",2018-09-24,,2018-09-18,2018-10-08,,,244393,10,7,3,0.7,8,3,2018-10-05,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,"{ResourceType=TestPlan, Id=276338, Name=[Billable Link] Link sending to a customer from order page}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=200227}","{ResourceType=Feature, Id=273883, Name=Billable Link}",9,0,,FALSE,,,D'Urban,To Be Determined,1,
+UserStory,273909,"[Billable Link Template] As an user, I want to be able to receive an email with billable link","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+On Marketing &gt; Communications &gt; Email Templates &gt; Add Template page &gt; Load default template &#40;section&#41; &gt; Template &#40;setting&#41;</div>
+
+<ul>
+	<li><span style=""background-color:#40e0d0"">Subject&#58; Billable Link for Order &#35;XXXXX</span></li>
+	<li>Default template for &#39; Customer Billable Link&#39; should be created and contain&#58;
+	<ul>
+		<li>Number of the order</li>
+		<li>Generated Billable Link</li>
+		<li>Customer Name</li>
+		<li>Amount to Pay &#40;amount that was specified in the pop-up by an admin <a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273910"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273910</a>&#41;</li>
+	</ul>
+	</li>
+</ul>
+
+<div>related story with sending of the email&#58; <a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273910"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273910</a></div>
+</div>
+",2018-09-24,,2018-09-18,2018-10-09,2018-10-09,,244392,5,4,1,0.8,4,1,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{ResourceType=TestPlan, Id=276334, Name=[Billable Link] User e-mail template}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5.5, ResourceType=EntityState, Id=1372, Name=Tested on DEMO}","{ResourceType=TeamAssignment, Id=200226}","{ResourceType=Feature, Id=273883, Name=Billable Link}",9,0,,FALSE,,,D'Urban,To Be Determined,1,
+UserStory,273907,"[Admin Template] As an admin, I want to receive an email if a user makes a payment for a billable link","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+
+<ul>
+	<li>On Marketing &gt; Communications &gt; Email Templates &gt; Add Template page &gt; Load default template &#40;section&#41; &gt; Template &#40;setting&#41;
+	<ul>
+		<li><span style=""background-color:#40E0D0"">Subject&#58; Billable Link for Order &#35;XXXXX was payed</span></li>
+		<li>Default template for &#39;Admin Billable Link &#39; should be created and contain&#58;
+		<ul>
+			<li>Number of the order</li>
+			<li>Customer Name</li>
+			<li>Customer email</li>
+			<li>Paid Amount</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+",2018-09-24,,2018-09-18,2018-10-09,2018-10-09,,244391,5,3.8,1.2,0.76,3.8,1.2,2018-10-09,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{ResourceType=TestPlan, Id=276335, Name=[Billable Link] Admin e-mail template}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5.5, ResourceType=EntityState, Id=1372, Name=Tested on DEMO}","{ResourceType=TeamAssignment, Id=200224}","{ResourceType=Feature, Id=273883, Name=Billable Link}",9,0,,FALSE,,,D'Urban,To Be Determined,1,
+UserStory,273885,"[General Settings] As an admin, I want to be able to specify the following parameters for the extension","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<div>Stores - Configuration - Ewave - Billable Link &#40;tab&#41;</div>
+
+<ul>
+	<li>The following settings will be created&#58;</li>
+</ul>
+
+<div>
+<table border=""1"" cellpadding=""0"" cellspacing=""1"">
+	<thead>
+		<tr>
+			<th>
+			<div><strong>Path</strong></div>
+			</th>
+			<th>
+			<div><strong>Setting</strong></div>
+			</th>
+			<th>
+			<div><strong>Type</strong></div>
+			</th>
+			<th>
+			<div><strong>Scope</strong></div>
+			</th>
+			<th>
+			<div><strong>Description</strong></div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan=""4"">
+			<div>General Settings &#40;section&#41;</div>
+			</td>
+			<td>
+			<div>Create Order</div>
+			</td>
+			<td>
+			<div>dropdown</div>
+			</td>
+			<td>
+			<div><span style=""background-color:#ffff00"">global</span></div>
+			</td>
+			<td>
+			<ul>
+				<li>Yes - default value
+				<ul>
+					<li>If &#39;Yes&#39; is selected&#44; than after a customer makes a payment an order for the respective payment should be created in Magento.</li>
+				</ul>
+				</li>
+				<li>No
+				<ul>
+					<li>If &#39;No&#39; is selected&#44; than after a customer makes a payment NO order should be created</li>
+				</ul>
+				</li>
+				<li>Tips&#58; Specify if an order should be created after customer&#39;s successful payment</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div>Customer Email Template</div>
+			</td>
+			<td>
+			<div>dropdown</div>
+			</td>
+			<td>
+			<div>storeview</div>
+			</td>
+			<td>
+			<ul>
+				<li>&#39;Customer Billable Link&#39; &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273909"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273909</a>&#41; - default value</li>
+				<li>Contains list of templates in the system
+				<ul>
+					<li>the specified email template should be sent to a customer when an admin sends a billable link to a customer</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div>Admin Email Template</div>
+			</td>
+			<td>
+			<div>dropdown</div>
+			</td>
+			<td>
+			<div>storeview</div>
+			</td>
+			<td>
+			<ul>
+				<li>&#39;Admin Billable Link&#39; &#40;<a href=""https&#58;&#47;&#47;tp.ewave.com&#47;273907"" target=""_blank"">https&#58;&#47;&#47;tp.ewave.com&#47;273907</a>&#41; - default value</li>
+				<li>Contains list of templates in the system
+				<ul>
+					<li>the specified email template should be sent to a admin after successful payment of a user</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div>Send Admin Email To</div>
+			</td>
+			<td>
+			<div>text</div>
+			</td>
+			<td>
+			<div>storeview</div>
+			</td>
+			<td>
+			<div>Tip&#58; &#39;Comma-separated. Will be sent as separate emails.&#39;<br />
+			Default - empty.</div>
+
+			<div>Emails should be sent by &#39;Separate Email&#39; method.</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>Functional Requirement&#58;</div>
+
+<ul>
+	<li>A virtual product should be created. This product should NOT be displayed on the website.</li>
+	<li>This product should be used for payments</li>
+</ul>
+</div>
+</div>
+",2018-09-24,,2018-09-18,2018-10-09,,,244371,6,4,2,0.6667,4,2,2018-10-05,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Artem, ResourceType=GeneralUser, Id=637, LastName=Mikhailov, Login=artem.mikhailov@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,"{ResourceType=TestPlan, Id=276295, Name=[Billable Link] General Settings}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=200212}","{ResourceType=Feature, Id=273883, Name=Billable Link}",9,0,,FALSE,,,D'Urban,To Be Determined,1,
+UserStory,273884,[Billable Link] Solution Architecture,"<h1><span style=""background-color: #add8e6"">Backend</span></h1>
+
+<h3><strong>Database Scheme</strong></h3>
+
+<div>
+<div>&lt;enter a gliffy link here&#44; add additional description if required&gt;</div>
+</div>
+
+<div>
+<div>
+<hr>
+<h3><strong>Class Diagram</strong></h3>
+
+<div> </div>
+
+<div>&lt;enter a gliffy link here&#44; add additional description if required&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Algorithms</strong></h3>
+
+<div>&lt;provide a list of algoritms to be used&#44; add a gliffy diagram if required&gt;</div>
+
+<div> </div>
+
+<div>The following algorithms are used in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width: 500px"">
+	<tbody>
+		<tr>
+			<td><strong>Algorithm Name</strong></td>
+			<td><strong>Link </strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your algorithm name&gt;</td>
+			<td>&lt;link to gliffy&gt;</td>
+			<td>&lt;why we need to create this algorithm OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+<hr>
+<h3><strong>Observers</strong></h3>
+</div>
+</div>
+</div>
+
+<div>
+<div>
+<p>&lt;add a list of observers here&gt;</p>
+</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Plugins</strong></h3>
+
+<p>&lt;add a list of plugins here&gt;</p>
+</div>
+
+<div>
+<hr>
+<h3><strong>Dispatches</strong></h3>
+
+<div>&lt;add a list of dispatches here&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>Rewrites</strong></h3>
+
+<p>&lt;add a list of rewrites here&gt;</p>
+</div>
+
+<div>
+<hr>
+<h3><strong>UI components</strong></h3>
+</div>
+
+<div>
+<h2><span style=""font-size: 14px"">&lt;add a list of UI components here&gt;</span></h2>
+
+<hr>
+<h3><strong>Data &#47; Repository API</strong></h3>
+
+<div>&lt;add a list of Data &#47; Repository API here&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3><strong>CLI Commands</strong></h3>
+</div>
+
+<div>&lt;add a list of cli commands here as below&gt;</div>
+
+<div> </div>
+
+<div>
+<hr>
+<h3><strong>Cron Jobs</strong></h3>
+</div>
+
+<div>&lt;add a list of cron jobs here&gt;</div>
+
+<div>
+<hr>
+<div>
+<h3>Unit Tests</h3>
+</div>
+
+<div>&lt;add a list of test here&gt;</div>
+
+<div> </div>
+
+<div>
+<div>The following tests are developed in the extension&#58;</div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"" style=""width: 500px"">
+	<tbody>
+		<tr>
+			<td><strong>Test Name</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;Your test name&gt;</td>
+			<td>&lt;why we need to create this test OR link to story&gt;</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<hr>
+<h1><span style=""background-color: #008000"">FE Solution Architecture </span></h1>
+
+<div>
+<hr>
+<h3>Description</h3>
+
+<div>&lt;frontend components description&gt;</div>
+</div>
+
+<div>
+<hr>
+<h3>Initializing</h3>
+
+<div>
+<div>
+<p>&lt;describe how to initialize component&#44; the ways of initializing&#44; XML&#44; link to the readme.md file of component and so on&gt; </p>
+
+<hr>
+<div> </div>
+</div>
+</div>
+
+<div>
+<h3>Configuration</h3>
+</div>
+
+<div>
+<p>&lt;describe how to configure component&#44; the ways of configuring&#44; XML and so on&gt; </p>
+
+<div>
+<hr>
+<h3>Requirements</h3>
+</div>
+</div>
+</div>
+
+<p>&lt;add to the section&#58; component relations on a page&#44; technical requirements&#44; component architecture or additional technical requirements&#44; some component events and so on&gt;</p>
+
+<hr>
+<h3>Algorithm</h3>
+
+<p>&lt;decribe the implementation step by step &#40;requests - response&#41;&gt;</p>
+
+<hr>
+<h3>Applying</h3>
+
+<div>&lt;Add the description of the places where created component may be used&#44; fields and pages&gt;</div>
+
+<div>
+<hr>
+<h2>Tips &#40;the section can be removed&#41;</h2>
+
+<ul>
+	<li>Add &quot;None&quot; to section &#40;do not remove empty sections&#41; if the information is not applicable.</li>
+	<li>If you don&#39;t have access to gliffy&#44; see <a href=""https&#58;&#47;&#47;wiki.ewave.com&#47;display&#47;MSKB&#47;Gliffy&#43;-&#43;Credentials"" target=""_blank"">here</a>.</li>
+	<li>Please&#44; use the styling of the list as below&#58;</li>
+</ul>
+
+<div>---</div>
+
+<div>
+<div>New cron jobs will be created&#58;</div>
+
+<ul>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+	<li>&lt;Cron job name&gt;. Cron job will be used for ...</li>
+</ul>
+ ---</div>
+</div>
+</div>
+
+<div> </div>
+</div>
+
+<p> </p>
+",,,2018-09-18,2018-10-09,2018-10-05,,132349,4,0,4,0,0,4,2018-09-18,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Andrey, ResourceType=GeneralUser, Id=294, LastName=Obuhovskiy, Login=andrey.obuhovskiy@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}","{FirstName=Valeriy, ResourceType=GeneralUser, Id=101, LastName=Denisik, Login=valeriy.denisik}",,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=1, ResourceType=EntityState, Id=1260, Name=Open}","{ResourceType=TeamAssignment, Id=200211}","{ResourceType=Feature, Id=273883, Name=Billable Link}",9,0,,FALSE,,,Cerruti,To Be Determined,1,
+UserStory,273874,"[PRE-EVENT REPORT] As an admin, I want to be able to see event entries report and export it",1970-01-01,2018-09-21,2018-09-27,2018-09-18,2018-09-27,2018-09-27,bug,234625,24,24,0,1,17,0,2018-09-27,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Ivan, ResourceType=GeneralUser, Id=110, LastName=Ivanov, Login=ivan.ivanov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Ivan, ResourceType=GeneralUser, Id=110, LastName=Ivanov, Login=ivan.ivanov@ewave.com}","{ResourceType=TestPlan, Id=274776, Name=[EVENT. REPORTS] Pre-Event Report}","{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200204}","{ResourceType=Feature, Id=196591, Name=[Event] Generate Report}",9,0,,FALSE,,,CRV,To Be Determined,1,
+UserStory,273762,"[B2B][Neverfail][Outlets] As a customer, I want On Hold status to be splitted","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;</div>
+ 
+
+<div>
+<div>On hold status should be splitted into 2 different statuses&#58;</div>
+
+<ul>
+	<li><strong>Inactive</strong>&#58; sales_status &#61; inactive &#40;closed&#41; &#61; 2</li>
+	<li><strong>Suspended</strong>&#58; delivery_hold &#61; 1 &#61; Suspension Active</li>
+</ul>
+
+<div>General rules&#58;</div>
+
+<ol>
+	<li>Customer should be able to login but not checkout when outlet is Inactive or Suspended</li>
+	<li>After login customer should see different notification if their outlet is Inactive or Suspended&#58;
+	<ul>
+		<li>Inactive&#58; &#39;Your account is currently inactive and you will not be able to place an order at this stage. Please call us on 13 30 37 or Live Chat.&#39;</li>
+		<li>Suspended&#58; &#39;Your account is currently suspended and you will not be able to place an order at this stage. Please call us on 13 30 37 or Live Chat.&#39;</li>
+		<li>Messages should be shown as inline errors at the top of the screen</li>
+	</ul>
+	</li>
+	<li>Address should be not selectable and customer should see a notification adjacent to address &#40;in dropdown&#41; <span style=""background-color:#FFD700"">on checkout</span></li>
+	<li>Master user should be able to see outlet statuses in outlet lists on checkout and in My Account</li>
+</ol>
+
+<div> </div>
+</div>
+
+<div> </div>
+
+<div> </div>
+</div>
+",2018-10-03,,2018-09-17,2018-10-09,2018-10-05,,199022,34,17.3,16.7,0.5088,20.55,16.7,2018-10-05,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Eldaniz, ResourceType=GeneralUser, Id=188, LastName=Gasymov, Login=eldaniz.gasymov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=30, LastName=Naiman, Login=denis}",,"{ResourceType=Release, Id=271210, Name=R48}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=5, ResourceType=EntityState, Id=1263, Name=In Testing}","{ResourceType=TeamAssignment, Id=200091}","{ResourceType=Feature, Id=203679, Name=[B2B][Neverfail] Team Management}",9,0,,FALSE,,,Neverfail,To Be Determined,1,
+UserStory,273758,"[Catalog Grid Images] As an admin, I want to be able to see not cropped resized images on the grid","<div>
+<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br />
+ </div>
+
+<ol>
+	<li>An ability to change the width and height of the image attributes on the grid should be added
+	<ul>
+		<li>
+		<div>LiipImagine filter should be developed</div>
+		</li>
+		<li>
+		<div>Settings that would be applied to the image review grid feature with dynamic dimensions should be added</div>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<div>An ability for the image preview to be resized &#40;not cropped as per default&#41; should be added</div>
+	</li>
+</ol>
+</div>
+",2018-09-18,2018-09-20,2018-09-17,2018-09-20,2018-09-20,,244253,16,16,0,1,13.4,0,2018-09-20,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}","{FirstName=Denis, ResourceType=GeneralUser, Id=458, LastName=Babkov, Login=denis.babkov@ewave.com}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}","{ResourceType=TestPlan, Id=274242, Name=[Catalog Grid Images] As an admin, I want to be able to see not cropped resized images on the grid}","{ResourceType=Release, Id=271209, Name=R47}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=7, ResourceType=EntityState, Id=1266, Name=Done}","{ResourceType=TeamAssignment, Id=200088}","{ResourceType=Feature, Id=266202, Name=[AKENEO] Catalog Grid Images}",9,0,,FALSE,,,MYER,To Be Determined,1,
+UserStory,273678,"[Filter Bundle] As an admin, I want filtering by date to be extended","<div>ACCEPTANCE CRITERIA&#58;</div>
+
+<div>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-1</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>Admin is on the&#58;
+			<ul>
+				<li>product grid</li>
+				<li>content tab in export profile</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>
+			<ul>
+				<li>when filtering by date</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<ol>
+				<li>&#39;extended more&#39; and &#39;extended less than&#39; views should be added</li>
+				<li> For this default &#39;more&#39; and &#39;less than&#39; vies should be used and extended with&#58;
+				<ul>
+					<li>Plus&#47;minus dropdown
+					<ul>
+						<li>allows to select if the defined number of days&#47;weeks&#47;months should be added or excluded of the selected date</li>
+						<li>The next day after the selected date should be taken as the starting point</li>
+					</ul>
+					</li>
+					<li>days&#47;weeks&#47;months dropdown list</li>
+					<li>input field
+					<ul>
+						<li>only characters</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>Example</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>VE-1</td>
+			<td><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=184423"" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<div> </div>
+
+<div>
+<table border=""1"" cellpadding=""1"" cellspacing=""1"">
+	<tbody>
+		<tr>
+			<td colspan=""2""><strong>AC-2</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Given</strong></td>
+			<td>Admin is on the&#58;
+			<ul>
+				<li>product grid</li>
+				<li>content tab in export profile</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>When</strong></td>
+			<td>
+			<ul>
+				<li>when filtering by date</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Then</strong></td>
+			<td>
+			<ol>
+				<li>&#39;extended more or equals&#39; and &#39;extended less or equals&#39; views should be added</li>
+				<li> For this default &#39;more&#39; and &#39;less than&#39; vies should be used and extended with&#58;
+				<ul>
+					<li>Plus&#47;minus dropdown
+					<ul>
+						<li>allows to select if the defined number of days&#47;weeks&#47;months should be added or excluded of the selected date
+						<ul>
+							<li>If selected &#39;Plus&#39; then next day after the selected date should be taken as the starting point </li>
+							<li>If selected &#39;Minus&#39; then previous day before the selected date should be taken as the starting point</li>
+						</ul>
+						</li>
+					</ul>
+					</li>
+					<li>days&#47;weeks&#47;months dropdown list</li>
+					<li>input field
+					<ul>
+						<li>only characters</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>Example</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>VE-1</td>
+			<td><img src=""https://ewave.tpondemand.com/Attachment.aspx?AttachmentID=184423"" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div> </div>
+
+<div> </div>
+</div>
+",2018-10-05,,2018-09-17,2018-10-09,,,244192,24.5,19,5.5,0.7755,56.8,5.5,2018-10-05,,,0,h,"{ResourceType=EntityType, Id=4, Name=UserStory}","{ResourceType=Project, Process={ResourceType=Process, Id=20}, Id=4381, Name=eWave LEGO}","{FirstName=Victor, ResourceType=GeneralUser, Id=247, LastName=Martinovich, Login=victor.martinovich@ewave.com}","{FirstName=Dmitry, ResourceType=GeneralUser, Id=654, LastName=Plavskiy, Login=dmitry.plavskiy@ewave.com}",,,"{ResourceType=Release, Id=275050, Name=R49}",,,"{ResourceType=Team, Id=134937, Name=LEGO TEAM}","{Importance=6, ResourceType=Priority, Id=2, Name=P6 - Normal}","{NumericPriority=4.5, ResourceType=EntityState, Id=1262, Name=Dev - BE}","{ResourceType=TeamAssignment, Id=200053}","{ResourceType=Feature, Id=273666, Name=Filter Bundle}",9,0,,FALSE,,,MYER,To Be Determined,1,
